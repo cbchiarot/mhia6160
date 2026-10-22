@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MHIA 6160 - Course Outline Review</title>
+    <link rel="icon" type="image/png" href="mhia6160.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Modern, minimal style setup */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #ffffff;
+            max-width: 900px;
+            width: 90%;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            margin: 40px 0; 
+        }
+        .course-code {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #6c757d;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        h1 {
+            font-size: 2.25rem;
+            color: #1a1a1a;
+            margin: 0 0 10px 0;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        .author {
+            font-size: 1.1rem;
+            color: #495057;
+            margin-bottom: 30px;
+            line-height: 1.4;
+        }
+        .author-title {
+            font-size: 0.9rem;
+            color: #6c757d;
+            display: block;
+        }
+        .divider {
+            height: 2px;
+            width: 60px;
+            background-color: #0062AC; /* Schulich Blue Accent */
+            margin: 0 auto 30px auto;
+        }
+        .description {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: #495057;
+            text-align: left;
+            margin-bottom: 30px;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-left: 4px solid #0062AC;
+            border-radius: 0 4px 4px 0;
+        }
+        .description ul {
+            margin-top: 10px;
+            margin-bottom: 0;
+            padding-left: 20px;
+        }
+        .description li {
+            margin-bottom: 10px;
+        }
+        .description li:last-child {
+            margin-bottom: 0;
+        }
+        /* Button Layout Wrapper */
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Added gap for side-by-side layout */
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        /* Schulich-Branded Action Button */
+        .btn-review {
+            display: inline-block;
+            width: 100%;
+            max-width: 320px;
+            background-color: #0062AC;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 16px 24px;
+            border-radius: 6px;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+            box-shadow: 0 4px 6px rgba(0, 98, 172, 0.2);
+            box-sizing: border-box;
+        }
+        .btn-review:hover {
+            background-color: #004b84;
+        }
+        .btn-review:active {
+            transform: scale(0.98);
+        }
+        .btn-review i {
+            margin-right: 8px;
+        }
+        /* --- 2x3 Responsive Matrix Grid --- */
+        .module-matrix {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+            gap: 24px;
+            text-align: left;
+        }
+        .module-card {
+            background-color: #ffffff;
+            border: 1px solid #e9ecef;
+            border-radius: 6px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .module-heading {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin: 0 0 16px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .module-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #0062AC;
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+            transition: color 0.2s ease;
+        }
+        .module-link:last-child {
+            margin-bottom: 0;
+        }
+        .module-link:hover {
+            color: #004b84;
+            text-decoration: underline;
+        }
+        .module-icon {
+            color: #6c757d;
+            width: 20px;
+            text-align: center;
+            margin-right: 10px;
+            font-size: 0.9rem;
+        }
+        /* Responsive Cascade for Tablets and Smaller Laptops */
+        @media (max-width: 800px) {
+            .module-matrix {
+                grid-template-columns: repeat(2, 1fr); /* Collapses to 2 columns */
+            }
+        }
+        /* Responsive Cascade for Mobile Phones */
+        @media (max-width: 500px) {
+            .module-matrix {
+                grid-template-columns: 1fr; /* Collapses to 1 vertical column */
+            }
+        }
+        /* Footer & Legal Language */
+        .legal-footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #dee2e6;
+            font-size: 0.85rem;
+            color: #6c757d;
+            text-align: left;
+            line-height: 1.5;
+        }
+        .legal-footer strong {
+            color: #495057;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="course-code">MHIA 6160 | 1.50 Credits</div>
+        <h1>Value and Quality in Healthcare</h1>
+        <div class="author">
+            Dr. Cameron B. Chiarot
+            <span class="author-title">Research Scientist & Adjunct Professor</span>
+        </div>
+        <div class="divider"></div>
+
+        <div class="description">
+            <p>Welcome to the digital staging area for the course: Value and Quality in Healthcare (MHIA 6160). This platform serves as the primary repository for evaluating the Winter 2027 curriculum. It provides access to the course outline, module lectures, the interactive technical R-Laboratory, and the Module 5 Case Study, which constitutes the course's comprehensive curriculum.</p>
+            </ul>
+        </div>
+
+        <div class="button-group">
+            <a href="mhia6160_outline_w27.pdf" target="_blank" class="btn-review">
+                <i class="fas fa-file-pdf"></i> Course Outline
+            </a>
+            
+        <div class="module-matrix">
+            <div class="module-card">
+                <h3 class="module-heading">Module 1</h3>
+                <a href="week1_introduction.html" target="_blank" class="module-link">
+                    <i class="fa-solid fa-book-open module-icon"></i> Introduction_01
+                </a>
+                <a href="week1_lecture.html" target="_blank" class="module-link">
+                    <i class="fa-solid fa-chalkboard-user module-icon"></i> Lecture_01
+                </a>
+                <a href="week1_r_laboratory.html" target="_blank" class="module-link">
+                    <i class="fa-solid fa-code module-icon"></i> R-Lab_01
+                </a>
+                <a href="week1_evaluation.html" target="_blank" class="module-link">
+                    <i class="fa-solid fa-clipboard-check module-icon"></i> Evaluation_01
+                </a>
+            </div>
+            <div class="module-card">
+                <h3 class="module-heading">Module 2</h3>
+                <a href="week2_lecture.html" target="_blank" class="module-link">
+                    <i class="fa-solid fa-chalkboard-user module-icon"></i> Lecture_02
+                </a>
+                <a href="week2_r_laboratory.html" target="_blank" class="module-link">
+                    <i class="fa-solid fa-code module-icon"></i> R-Lab_02
+                </a>
+            </div>
+            <div class="module-card">
+                <h3 class="module-heading">Module 3</h3>
+                <a href="week3_lecture.html" target="_blank" class="module-link">
+                    <i class="fa-solid fa-chalkboard-user module-icon"></i> Lecture_03
+                </a>
+                <a href="week3_r_lecture.html" target="_blank" class="module-link">
+                    <i class="fa-solid fa-chalkboard-user module-icon"></i> R-Lec_03
+                </a>
+                <a href="week3_r_laboratory.html" target="_blank" class="module-link">
+                    <i class="fa-solid fa-code module-icon"></i> R-Lab_03
+                </a>
+            </div>
+            <div class="module-card">
+                <h3 class="module-heading">Module 4</h3>
+                <a href="week4_lecture.html" target="_blank" class="module-link">
+                    <i class="fa-solid fa-chalkboard-user module-icon"></i> Lecture_04
+                </a>
+                <a href="week4_r_laboratory.html" target="_blank" class="module-link">
+                    <i class="fa-solid fa-code module-icon"></i> R-Lab_04
+                </a>
+            </div>
+            <div class="module-card">
+                <h3 class="module-heading">Module 5</h3>
+                <a href="week5a_lecture.html" target="_blank" class="module-link">
+                    <i class="fa-solid fa-chalkboard-user module-icon"></i> Lecture_05a
+                </a>
+                <a href="week5b_lecture.html" target="_blank" class="module-link">
+                    <i class="fa-solid fa-chalkboard-user module-icon"></i> Lecture_05b
+                </a>
+                <a href="week5b_case.html" target="_blank" class="module-link">
+                    <i class="fa-solid fa-book-open module-icon"></i> Case Study
+                </a>
+            </div>
+            </div>
+        <div class="legal-footer">
+            <strong>© 2026 Dr. Cameron B. Chiarot. All rights reserved.</strong><br>
+            These course materials for <em>MHIA 6160 Value and Quality</em> were developed entirely by the author. They are hosted here strictly for professional portfolio and peer-review purposes. Reproduction, distribution, or adaptation of these materials without explicit written permission is strictly prohibited. The instructional design, pedagogical frameworks, and views presented are the author's own and do not necessarily represent the official policies of York University.
+        </div>
+    </div>
+</body>
+</html>
