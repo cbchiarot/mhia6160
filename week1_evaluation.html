@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1 Student Evaluation</title>
+    <style>
+        /* Modern, minimal style mirroring the MHIA 6160 landing page */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Aligned to top to support scrolling down the tall form */
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #1a1a1a;
+            margin: 0 0 8px 0;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 1.05rem;
+            color: #6c757d;
+            margin-bottom: 25px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .divider {
+            height: 2px;
+            width: 60px;
+            background-color: #0062AC; /* Schulich Blue */
+            margin: 0 0 30px 0;
+        }
+
+        .instruction-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #495057;
+            margin-bottom: 30px;
+        }
+
+        .instruction-text p {
+            margin-bottom: 16px;
+        }
+
+        .signature {
+            margin-top: 30px;
+            color: #495057;
+        }
+
+        /* Responsive iframe container */
+        .iframe-container {
+            width: 100%;
+            overflow: hidden;
+            border-top: 1px solid #e9ecef;
+            padding-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Week 1 Student Evaluation</h1>
+        <div class="subtitle">Course Introduction, Lecture, R-Laboratory</div>
+        
+        <div class="divider"></div>
+
+        <!-- Instructional Letter -->
+        <div class="instruction-text">
+            <p>Dear Students:</p>
+            <p>Please take a few minutes to provide feedback on our Week 1 class. Your responses are anonymous and are critical for improving the delivery and structure of future lecture modules and R-Labs.</p>
+            <p>Thank you for sharing your feedback and insights. I look forward to seeing you at our next lecture.</p>
+            <div class="signature">Dr. Cameron B. Chiarot</div>
+        </div>
+        
+        <!-- Embedded Google Form -->
+        <div class="iframe-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfJGRaiGmufiJbKOi6-RvMq-MwD4vlhdx8LzRijT4e11FIQ3Q/viewform?embedded=true" width="100%" height="2813" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+    </div>
+
+</body>
+</html>
